@@ -1,0 +1,63 @@
+.about-page {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+
+  .about-container {
+    display: flex;
+    max-width: 1200px;
+    gap: 2rem;
+    flex-wrap: wrap; /* Add this to allow wrapping */
+
+    .about-text {
+      /* flex: 1; Removed to allow for more dynamic resizing*/ 
+      
+      /* Add the following for responsive adjustments */
+      
+      flex: 1 1 300px; /* Adjust the minimum width as needed */
+      min-width: 300px;
+
+      h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-bottom: 1.5rem;
+      }
+    }
+
+    .about-image {
+      flex: 1 1 300px;
+      min-width: 300px;
+      /* flex: 1; Removed to allow for more dynamic resizing */
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .about-container {
+    .about-text {
+      width: 100%;
+      flex: 1 1 100%; /* Make text take full width on smaller screens */
+      min-width: 0;
+    }
+    .about-image{
+        min-width: 0;
+    }
+  }
+}

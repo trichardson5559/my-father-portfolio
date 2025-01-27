@@ -1,0 +1,53 @@
+.contact-container {
+  /* ... (rest of your existing styles) */
+  min-height: 100vh; /* Make the container at least the height of the viewport */
+  width: 100vw; /* Make the container the width of the viewport */
+  display: flex;
+  flex-direction: column; /* Align items vertically to fill the space */
+  justify-content: flex-start; /* Align content to the top */
+  align-items: flex-start; /* Align content to the left */
+  background: url('/src/assets/p.jpg') no-repeat top center; /* Always align top */
+  background-size: cover;;
+  color: white; /* Set text color to white */
+  font-family: sans-serif; /* Choose your preferred font */
+  padding: 4rem;
+  text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.8); /* Add text shadow */
+
+}
+.contact-info {
+  flex: 1;
+  margin-right: 2rem;
+}
+
+.email-buttons {
+  flex: 1;
+  text-align: left;
+}
+
+.email-buttons h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.email-buttons p {
+  margin-bottom: 1rem;
+}
+
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.email-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.email-button:hover {
+  background-color: #45a049;
+}

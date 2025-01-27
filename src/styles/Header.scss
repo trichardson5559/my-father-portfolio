@@ -1,0 +1,39 @@
+.header {
+  display: flex;
+  justify-content: space-between; /* Align nav and social icons */
+  align-items: center;
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+  padding: 1rem 2rem;
+
+  .nav {
+    display: flex;
+    gap: 1.5rem; /* Add spacing between links */
+
+    a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: color 0.3s;
+
+      &:hover {
+        color: #007bff; /* Change color on hover */
+      }
+    }
+  }
+
+  .social-media-icons {
+    display: flex;
+    gap: 1rem; /* Add spacing between icons */
+
+    a {
+      color: #fff;
+      font-size: 1.5rem; /* Size of the icons */
+      transition: color 0.3s;
+
+      &:hover {
+        color: #007bff; /* Change color on hover */
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.hero {
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+  background: url('/src/assets/k_standing_highres.jpg') no-repeat top center; /* Always align top */
+  background-size: cover; /* Cover the area proportionally */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 4rem;
+  color: #fff;
+  text-align: left;
+  text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.8); /* Add text shadow */
+
+
+  .hero-content {
+    /* Removed the background card */
+  h1 {
+    font-size: 4rem; /* Larger size for the title */
+    font-weight: bold;
+    margin: 0;
+    
+  }
+
+  p {
+    font-size: 1.5rem; /* Smaller size for the subheader */
+    margin-top: 0.5rem;
+    letter-spacing: 2px;
+  }
+  }
+}

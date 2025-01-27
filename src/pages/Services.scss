@@ -1,0 +1,68 @@
+.services-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the content horizontally */
+  justify-content: center; /* Center the content vertically */
+  min-height: 100vh; /* Full viewport height */
+  background-image: url('../assets/service2.jpg'); /* Path to your image */
+  background-size: cover; /* Ensure the image covers the entire background */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  color: #fff; /* Set text color to white for contrast */
+  padding: 2rem;
+
+  h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Add text shadow for better visibility */
+  }
+
+  .services-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .services-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center services horizontally */
+    gap: 1rem; /* Add spacing between service items */
+    margin-bottom: 2rem;
+
+    .service-item {
+      background-color: rgba(59, 77, 97, 0.9); /* Semi-transparent background for contrast */
+      color: #fff;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+    gap: 1rem; /* Add spacing between the buttons */
+    width: 100%; /* Ensure the container spans full width */
+    max-width: 800px; /* Optional: limit the container width */
+  }
+
+  .request-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    text-decoration: none;
+    margin: 0 1rem; /* Add spacing between buttons */
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
+}
+
+  
